@@ -3,6 +3,12 @@ os: linux
 files:
  - source: /index.html
    destination: /var/www/html/
+ - source: /_config.yml
+   destination: /var/www/html/
+ - source: css
+   destination: /var/www/html/
+ - source: images
+   destination: /var/www/html/    
 hooks:
    Applicationstart:
     - location: script/restart.sh
